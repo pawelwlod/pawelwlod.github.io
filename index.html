@@ -4,16 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/darthfortis.png" />
-
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+  
   <!-- Put your site title here -->
   <title>
-    Darth_Fortis | A Developer
+    Pawel Wlodarski | Portfolio
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="HTML, CSS, Python, Javascript, C++" />
+  <meta name="keywords" content="Python, C++, C#, Linux, Networking, Cyber Security" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -25,10 +28,10 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#pastclients" class="nav__link">Past Clients</a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#aboutme" class="nav__link">About Me</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -41,9 +44,10 @@
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
           <span>Pawel Wlodarski</span>
+          <span><br> (Portfolio is WIP)</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>Developer and Bug Bounty Hunter, going by the name "Darth_Fortis".</p>
+        <p>Cyber Security Enthusiast, Programmer, and IT geek <br> going by the name "Darth_Fortis".</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -51,38 +55,37 @@
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Projects ***** -->
 
-    <section class="work" id="work">
+    <section class="work" id="projects">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>My Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Multiple Discord Bots</h3>
+              <h3>Discord Bot Development</h3>
               <p>
-                I have developed many Discord Bots for a number of servers which are actively used. They range from Level/XP systems, role-play related, and User/Server Management.
+                Since around 2022, I have been developing various Discord bots for different servers. They range from Level/XP systems, role-play related games, User/Server Management, and networking...
               </p>
               <ul class="work__list">
                 <li>Python</li>
                 <li>JSON</li>
-                <li>Discord</li>
+                <li>Discord.py</li>
+                <li>Networking</li>
               </ul>
 
               <div class="work__links">
                 <a href="" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  See an example... <span>&rarr;</span>
                 </a>
-                <a href="" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
               </div>
             </div>
             <div class="work__image-box">
-              <img src="" class="work__image" alt="Project 1" />
+              <img src="" class="work__image" alt="Discord Bot Example" />
             </div>
           </div>
 
@@ -90,7 +93,7 @@
             <div class="work__text">
               <h3>My Portfolio</h3>
               <p>
-                This website has been one of my main projects and includes all my important work and ways to contact me.
+                This website has been one of my major achievements and includes all of my past and current projects! Through buildig this website I have learnt basic/intermediate Web Development skills and the use of languages such as HTML, CSS and Javascript.
               </p>
               <ul class="work__list">
                 <li>HTML</li>
@@ -100,16 +103,14 @@
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/Darth-Fortis/darth-fortis.gihub.io" class="link__text">
+                  See Source Code... <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/Darth-Fortis/darth-fortis.gihub.io">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
               </div>
             </div>
             <div class="work__image-box">
-              <img src="" class="work__image" alt="Project 2" />
+              <img src="" class="work__image" alt="My Portfolio" />
             </div>
           </div>
 
@@ -117,7 +118,7 @@
             <div class="work__text">
               <h3>TCP Client and Server</h3>
               <p>
-                My next project was a simple TCP client and server.
+                For my first ever networking project I decided to make a simple TCP client, server and proxy script. Through this I was able to practice my programming and my networking skills in protocols, ports, and the IP structure.
               </p>
               <ul class="work__list">
                 <li>TCP</li>
@@ -128,85 +129,72 @@
 
               <div class="work__links">
                 <a href="https://github.com/Darth-Fortis/Simple-TCP-Client-and-Server" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  See the scripts... <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/Darth-Fortis/Simple-TCP-Client-and-Server">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
               </div>
             </div>
             <div class="work__image-box">
-              <img src="" class="work__image" alt="Project 3" />
+              <img src="" class="work__image" alt="Practical Example: TCP client & server connection" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>[WIP] Instagram Bot</h3>
+              <h3>Instagram Scraping Script</h3>
               <p>
-                An Instagram bot which logs into your account and searches up a topic or person you've chosen, 
-                written in Python.
+                An Instagram script which logs into your account and searches up a topic or person you've chosen, 
+                written in Python. I sadly left this project after some complications; this project taught me (the hard way) time management and importance of upkeeping your motivation.
               </p> 
               <ul class="work__list">
                 <li>Python</li>
-                <li>Google</li>
-                <li>Instagram</li>
+                <li>Scraping</li>
+                <li>Automation</li>
               </ul>
 
               <div class="work__links">
                 <a href="https://github.com/Darth-Fortis/instagram-bot" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  See the unfinished code... <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/Darth-Fortis/instagram-bot" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
               </div>
             </div>
             <div class="work__image-box">
-              <img src="" class="work__image" alt="Project 4" />
+              <img src="" class="work__image" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Past Clients ***** -->
 
-    <section class="client" id="clients">
+    <section class="client" id="pastclients">
       <div class="row">
-        <h2>Clients</h2>
+        <h2>Past Clients</h2>
         <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="" class="client__logo" title="" alt="Client 1" />
-          <img src="" class="client__logo" title="" alt="Client 2" />
-          <img src="" class="client__logo" title="" alt="Client 3" />
-          <img src="" class="client__logo" title="" alt="Client 4" />
-          <img src="" class="client__logo" title="" alt="Client 5" />
-          <img src="" class="client__logo" title="" alt="Client 6" />
+          <!-- Add logos of the clients or companies -->
+          <img src="./images/Galactic_Republic.png" class="client__logo" title="SWTCW: Star Wars RP" alt="SWTCW: Star Wars RP" />
         </div>
       </div>
     </section>
 
-    <!-- ***** About ***** -->
+    <!-- ***** About Me ***** -->
 
-    <section class="about" id="about">
+    <section class="about" id="aboutme">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Hey! I am a 15 year old self-taught Developer and Bug Bounty Hunter. 
-              I have a massive passion for programming and an interest in Cyber Security and Bug Bounty Hunting. I also like working on different kinds of projects, and I am open for new challenges.
-              I am communicative, great at teamwork and very friendly to work with! Feel free to look at My Resume for more info😀
+              Hey! I am a 15 year old male who is a self-taught programmer and great enthusiast in Cyber Security. I enjoy working on different kinds of projects, ranging from networking to CTF challenges; I am always open for new challenges. I am communicative, great at teamwork and don't give up easily! Feel free to look at My Resume for more info😀
             </p>
-            <!-- Provide a link to your resume -->
+            <!-- Provide a link to resume -->
             <a href="https://profile.indeed.com/p/pawelw-chcd7ns" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/darth-fortis.png" alt="Picture of Me" />
+            <img class="about__photo" src="" alt="Picture of Me" />
           </div>
         </div>
       </div>
@@ -220,11 +208,10 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          If you are looking for a customer-friendly and co-operative developer, then you have found the right person!
           If you have any questions or would like to contact me about anything, feel free to either email me or DM me on Discord 😊
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:pawel.wlodarski09@gmail.com" class="btn">My Email Address</a>
+        <a href="mailto:pawelwlod@proton.me" class="btn">My Email Address</a>
         <a href="https://discord.gg/jjz64S5uEW" class="btn">My Discord</a>
       </div>
     </div>
@@ -253,9 +240,8 @@
         </li>
       </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2024 - Website designed & developed by Darth_Fortis.
+        &copy; 2025 - Website designed & developed by Pawel Wlodarski.
       </p>
     </div>
   </footer>
